@@ -1,0 +1,65 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Shared Navigation Bar using Flexbox */
+.navbar {
+    background-color: #333;
+    padding: 1rem 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+/* Highlight the current page in the navbar */
+.nav-links a.active {
+    background-color: #007bff;
+}
+
+/* Page Content Layout */
+.container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.skills-list {
+    list-style-type: square;
+    margin-left: 1.5rem;
+}
