@@ -1,0 +1,35 @@
+/* 1. Standard page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white; /* The default background color */
+    margin: 20px;
+    transition: background-color 0.4s ease; /* Makes the color change smooth */
+}
+
+/* 2. Flexbox container for the two columns */
+.layout-container {
+    display: flex;      /* Turns on Flexbox to put items side-by-side */
+    gap: 20px;          /* Adds a 20px gap between the columns */
+}
+
+/* 3. Styling for each individual column */
+.column {
+    flex: 1;            /* Tells both columns to take up equal space (50/50) */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* 4. MEDIA QUERY: Activates ONLY when screen width is 500px or less */
+@media (max-width: 500px) {
+    body {
+        /* Fulfills the requirement to change the background color */
+        background-color: lightblue; 
+    }
+    
+    .layout-container {
+        /* Bonus: Stacks the columns on top of each other for tiny screens */
+        flex-direction: column; 
+    }
+}
